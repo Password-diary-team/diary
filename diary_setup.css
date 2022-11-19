@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+
+form{
+    margin-top: 200px;
+    display: inline-block;
+    width: 250px;
+    border: solid 2px;
+    padding: 20px;
+}
+
+input{
+    margin: 10px;
+}
