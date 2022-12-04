@@ -1,0 +1,4 @@
+To play this project:
+- Go to Visual Studio Code, and open this folder
+- Type in "node app.js" in the terminal
+- Type in "localhost:3000" in your browser
