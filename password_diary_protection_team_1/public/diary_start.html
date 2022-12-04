@@ -1,0 +1,16 @@
+<!--to play the project, typing in "node app.js" in the terminal, and type in "localhost:3000" in any browser-->
+<html>
+    <head>
+        <link href="diary_setup.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body id="startPage">
+        <h1 id="setupHeading"> diary</h1>
+        <form id='start' action="/diary_start" method="POST">
+            <input type="password" id="unlockPass" name="unlockPass">
+            <input type='submit' id='unlockButton' value="Unlock">
+        </form>
+        <script src="diary_first_name.js"></script>
+        <script src="diary_start.js"></script>
+    </body>
+</html>
