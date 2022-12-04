@@ -1,0 +1,61 @@
+<!--to play the project, typing in "node app.js" in the terminal, and type in "localhost:3000" in any browser-->
+<html>
+    <head>
+        <link href="diary_setup.css" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather</title>
+        <link rel="stylesheet" type="text/css" href="weatherpart.css" title="style" />
+        <script src="weatherpart.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1 id="setupHeading">
+             diary 
+            <button onclick="weather()" id="weatherbutton" ><img src="weather.jpg" id="weathericon" alt="weathersymbol"></button>
+        </h1>
+        <div id="text">
+            <label id="label_1">1. </label>
+            <textarea id="entry_1" rows="7"></textarea>
+        </div>
+        <div>
+            <form id="passForm" method="POST" action="/diary">
+                <input type="submit" id='passButton' value="Lock">
+                <input type="password" id="passText" name="passText"> 
+            </form>
+            <button id="add" onclick="add()">+</button>
+            <button id="remove" onclick="remove()">-</button>
+        </div>
+
+        <div id="colours">
+            Red
+            <input id="red" class="colours" type="checkbox" onclick="colours(1)">
+            Blue
+            <input id="blue" class="colours" type="checkbox" onclick="colours(2)">
+            Pink
+            <input id="pink" class="colours" type="checkbox" onclick="colours(3)">
+            Yellow
+            <input id="yellow" class="colours" type="checkbox" onclick="colours(4)">
+            Green
+            <input id="green" class="colours" type="checkbox" onclick="colours(5)">
+            Lime
+            <input id="lime" class="colours" type="checkbox" onclick="colours(6)">
+            Reset
+            <input id="reset" class="colours" type="checkbox" onclick="colours(7)">
+        
+        </div>
+        
+            <p id="todayT"></p>
+            <img src="null" alt="t" id="todayI">
+            <p id="weeklyT"></p>
+            <img src="null" id="weeklyI">
+            <p id="provinceT"></p>
+            <img src="null" id="provinceI">
+            <p id="countryT"></p>
+            <img src="null" id="countryI">
+
+        <script src="diary.js"></script>
+        <script src="diary_first_name.js"></script>
+    </body>
+</html>

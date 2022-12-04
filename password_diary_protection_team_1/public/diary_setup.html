@@ -1,0 +1,17 @@
+<!--to play the project, typing in "node app.js" in the terminal, and type in "localhost:3000" in any browser-->
+<html>
+    <head>
+        <link href="diary_setup.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body id="loginPage">
+        <h1 id="setupHeading">Diary setup</h1>
+        <form id='login' action="/" method="post">
+            <label id='fnameLabel' for="fname">First name:</label>
+            <input type="text" id="fname" name="fname">
+            <label id="passLabel" for='pass'>Password: </label>
+            <input type="password" id="pass" name="pass">
+            <input id='loginSubmit' type="submit" value="Submit">
+        </form>
+    </body>
+</html>
