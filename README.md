@@ -46,4 +46,8 @@ This will then lock the diary, and prevent anyone from editting it. No one will 
 
 You can enter your password and press the button beside it again to access your diary.
 
+# Mocha-Chai
+You can see some unit-testing by opening the file "Mocha-test.html". This will display some tests to ensure that the website is working perfectly fine.
+
+![image](https://user-images.githubusercontent.com/77501024/212001068-e69728e3-c2af-4c54-a510-f54c2dd29717.png)
 
